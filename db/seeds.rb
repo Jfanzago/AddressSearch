@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Home.create(
+	city: Faker::Address.city, 
+	address: Faker::Address.address,
+	zip: Faker::zip,
+	state: Faker::state,
+)

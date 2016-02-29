@@ -1,2 +1,0 @@
-class ZillowApiController < ApplicationController
-end
