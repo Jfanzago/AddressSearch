@@ -1,3 +1,6 @@
+
+
+<% if @homes %>
 <% @homes.each do |h| %> 
 
         <p><%= h.address %></p> 
@@ -5,4 +8,7 @@
         <p><%= h.state %></p> 
         <p><%= h.zip %></p> 
         
-        <% end %>
+   <% end %>
+   <% else %>
+   <p> No Posts </p>
+   <% end %>

@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
 get "/" => "site#home"
 
-
 resources :homes, only: [:index, :show]
 
 

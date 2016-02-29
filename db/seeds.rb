@@ -6,9 +6,19 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+100.times do 
+
+
 Home.create(
 	city: Faker::Address.city, 
-	address: Faker::Address.address,
-	zip: Faker::zip,
-	state: Faker::state,
+	address: Faker::Address.street_address,
+	zip: Faker::Address.zip,
+	state: Faker::Address.state,
+	date: Faker::Date.between(4.days.ago, Date.today),
+	school: Faker::University.name,
+	name: Faker::Name.name,
+	email: Faker::Internet.email,
+	phone_number: Faker::PhoneNumber.cell_phone
 )
+
+end
