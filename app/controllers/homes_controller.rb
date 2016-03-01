@@ -7,7 +7,7 @@ class HomesController < ApplicationController
 	end
 
 	def show
-		@home = Home.search(params[:])
+		@homes = Home.find_by(id: params[:id])
 	end
 
 end
