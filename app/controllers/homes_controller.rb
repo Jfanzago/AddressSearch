@@ -2,12 +2,10 @@ class HomesController < ApplicationController
 
 	def index
 		@homes = Home.search(params[:search])
-		render "index"
+	
+		# render "index"
 	end
 
 	def show
 	end
-
-	
-
 end

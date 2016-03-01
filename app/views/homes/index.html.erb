@@ -1,6 +1,6 @@
 
 
-<% if @homes %>
+<% if @homes.present? %>
 <% @homes.each do |h| %> 
 
         <p><%= h.address %></p> 
@@ -9,6 +9,6 @@
         <p><%= h.zip %></p> 
         
    <% end %>
-   <% else %>
+<% else %>
    <p> No Posts </p>
-   <% end %>
+<% end %>
