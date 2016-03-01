@@ -7,5 +7,7 @@ class HomesController < ApplicationController
 	end
 
 	def show
+		@home = Home.search(params[:])
 	end
+
 end

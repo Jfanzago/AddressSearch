@@ -10,3 +10,12 @@
 .searchcontainer {
 	max-width:600px;
 }
+
+.searchbtn {
+	position: absolute;
+	top: 0;
+}
+
+.searchbox {
+	position: relative;
+}

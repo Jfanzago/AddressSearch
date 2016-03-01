@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 get "/" => "site#home"
 
 resources :homes, only: [:index, :show]
+# resources :home, only: [:show]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
