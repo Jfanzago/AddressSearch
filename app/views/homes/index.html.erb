@@ -1,11 +1,10 @@
 
-
+<body class= "cyan accent-4">
 <% if @homes.present? %>
 <% @homes.each do |h| %> 
 
 		<%= link_to("#{h.address}", home_path(h))%>
-<!--         <a href="/homes"><p><%= h.address %></p></a>
- -->        <p><%= h.city %></p> 
+        <p><%= h.city %></p> 
         <p><%= h.state %></p> 
         <p><%= h.zip %></p> 
         
@@ -14,4 +13,4 @@
    <p> No Posts </p>
 <% end %>
 
-
+</body>
