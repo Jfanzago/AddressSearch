@@ -6,15 +6,15 @@
     <div class="row">
     </div>
     <div class="row">
-     <div class="input-field white-text z-depth-4 search cyan accent-4">  
-      
-       <%= form_tag '/homes',:method =>'get' do %>
-       <%=text_field_tag :search%>
-      <!--  <a href="/homes" class="searchbtn waves-effect waves-light btn"><i class="material-icons right">icon</i>Search</a> -->
+     <div class="input-field black-text z-depth-4 search">        
+     
+      <%= form_tag '/homes',:method =>'get' do %>
+       <input placeholder="Enter State, City or Zip      Then hit Enter" type="text" class="validate" name="search">
+    
+    <!--  <a href="/homes" class="searchbtn waves-effect waves-light btn"><i class="material-icons right">icon</i>Search</a> -->
        <% end %>
        <!-- <input class="white-text serachbox"type="text" name"search"  width="65%" > -->
         <%%>
-       </form>
       
 
      </div>

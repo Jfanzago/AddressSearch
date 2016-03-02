@@ -1,15 +1,25 @@
  
+ <div class="container">
+<img class="center-align"src="http://energy.gov/sites/prod/files/styles/borealis_default_hero_respondlarge/public/log_home_11874794.jpg?itok=FmluMzfG"height="300" width="300">
+ </div>
 
-        <p><%= @homes.address%></p> 
-        <p><%= @homes.city %></p> 
-        <p><%= @homes.state %></p> 
-        <p><%= @homes.zip %></p> 
+<div class="container grey lighten-4">
+       <div class="row center-align">
+        <h6><%= @homes.address%>
+        <%= @homes.city %>,
+        <%= @homes.state %>
+        <%= @homes.zip %></h6> 
+        </div>
+        <div class="row center-align">
+        <span>Available to move in by: <%= @homes.date %></span>
+        </div>
  
+ </div>
 
 
 
  <!-- Modal Trigger -->
-  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Contact Form</a>
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal modal-fixed-footer">
@@ -20,8 +30,8 @@
         <p><%= @homes.phone_number%></p> 
 
  <div class="row">
-    <form class="col s12">
-      <div class="row">
+<!--     <form class="col s12">
+ -->      <div class="row">
         <div class="input-field col s6">
           <input placeholder="Placeholder" id="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>

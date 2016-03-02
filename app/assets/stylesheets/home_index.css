@@ -6,3 +6,11 @@
 .searchbox {
 	position: relative;
 }
+
+.cards {
+	margin-top: 80px
+}
+
+.card-title {
+	margin-top: 10px
+}

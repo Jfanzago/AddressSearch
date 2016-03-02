@@ -3,19 +3,10 @@
     }
 
 .input-field {
-	margin-top: 380px;
+	margin-top: 400px;
 	opacity: .8 ;
 }
 
 .searchcontainer {
 	max-width:600px;
-}
-
-.searchbtn {
-	position: absolute;
-	top: 0;
-}
-
-.searchbox {
-	position: relative;
 }
