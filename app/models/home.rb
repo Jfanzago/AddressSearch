@@ -1,7 +1,7 @@
 class Home < ActiveRecord::Base
 
 	def self.search(search)		
-    	where("city LIKE ? OR zip LIKE ? OR state LIKE ?", search, search, search)
+    	where("city ILIKE ? OR cast(zip as text) ILIKE ? OR state ILIKE ?", search, search, search)
 	end
 
 
