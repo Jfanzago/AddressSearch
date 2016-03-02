@@ -15,7 +15,6 @@ Home.create(
 	zip: Faker::Address.zip,
 	state: Faker::Address.state,
 	date: Faker::Date.between(4.days.ago, Date.today),
-	school: Faker::University.name,
 	name: Faker::Name.name,
 	email: Faker::Internet.email,
 	phone_number: Faker::PhoneNumber.phone_number
