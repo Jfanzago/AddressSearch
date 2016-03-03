@@ -19,3 +19,8 @@
 	font-family: 'Open Sans';
 
 }
+
+.fluid {
+	background-image: url("/assets/dogonbeach.jpg");
+	width: 90%; 
+}

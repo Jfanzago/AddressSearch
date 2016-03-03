@@ -1,5 +1,5 @@
 
-
+<div class="container fluid">
 <div class="container cards">
 	<div class="row">
 
@@ -11,8 +11,7 @@
 					<img src="images/sample-1.jpg">
 				</div>
 				<div class="card-content">
-<!-- 					<%= link_to("#{h.address}", home_path(h))%>
--->					
+			<p><%= h.images %></p>	
 				<p><%= h.address %></p>
 				<p><%= h.city %></p> 
 				<p><%= h.state %></p> 
@@ -22,8 +21,7 @@
 				<a href="/homes/<%= h.id %>"class="waves-effect waves-light btn">View </a>
 
 
-<!-- 					<a href="#">This is a link</a>
--->				</div>
+			</div>
 </div>
 </div>
 <% end %>
@@ -31,6 +29,7 @@
 <p> No Posts </p>
 <% end %>
 
+</div>
 </div>
 </div>
 <footer class="page-footer cyan darken-2">
